@@ -8,6 +8,7 @@ const PostTitle = styled.div`
   flex-direction: column;
   padding-left: 10px;
   position: relative;
+  width: 100%;
 `;
 
 export { PostTitle };

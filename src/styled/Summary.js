@@ -6,8 +6,8 @@ const Summary = styled.div`
   opacity: 0.5;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
-  width: 250px;
   word-wrap: break-word;
+  width: 250px;
 `;
 
 export { Summary };
