@@ -5,7 +5,7 @@ import { shade } from "polished";
 const slideUpAnimation = keyframes`${slideInUp}`;
 
 const Piller = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   min-width: 250px;
   padding-right: 43px;
   padding-left: 25px;
