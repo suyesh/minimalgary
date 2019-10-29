@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Piller } from './Piller'
 
 const PostTitle = styled.div`
   margin-top: 104px;
@@ -9,6 +10,11 @@ const PostTitle = styled.div`
   padding-left: 10px;
   position: relative;
   width: 100%;
+
+  ${Piller}:hover {
+    max-width: 300px;
+    transform: scale(0);
+  }
 `;
 
 export { PostTitle };
