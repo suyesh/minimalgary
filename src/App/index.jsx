@@ -60,7 +60,7 @@ function Pillers({ setHovered, hovered }) {
       color={color}
       setHovered={setHovered}
       hovered={hovered}
-      animateDuration={index + 1.3}
+      animateDuration={index + 1.8}
     />
   ));
 }

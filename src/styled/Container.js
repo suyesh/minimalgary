@@ -4,8 +4,8 @@ const Container = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-x: scroll;
+  overflow-y: hidden;
   height: 100%;
 `;
 
