@@ -1,13 +1,21 @@
-import React, { useState } from 'react'
-import { Date, Piller, PostTitle, Summary, Title } from '../styled'
+import React, { useState, useEffect } from "react";
+import { Date, Piller, PostTitle, Summary, Title } from "../styled";
+import faker from "faker";
 
 function PillerComponent({ color, hovered, setHovered, animateDuration }) {
   const [hoverTarget, setHoverTarget] = useState(false);
+  const [title, setTitle] = useState("");
+  const [summary, setSummary] = useState("");
 
   const handleHover = val => {
     setHovered(val);
     setHoverTarget(val);
   };
+
+  useEffect(() => {
+    setTitle(faker.lorem.sentence());
+    setSummary(faker.lorem.text());
+  }, []);
 
   return (
     <Piller
@@ -17,17 +25,15 @@ function PillerComponent({ color, hovered, setHovered, animateDuration }) {
       hovered={hovered}
       onMouseOut={() => handleHover(false)}
       animateDuration={animateDuration}
+      title={title}
     >
       <PostTitle>
-        <Date>3 July 2014</Date>
-        <Title>Hello World, I'm stull here</Title>
-        <Summary>
-          It’s been over 1 year since my last blog post, a very poor showing, so
-          this is just a quickie to say hi and talk about the past year.
-        </Summary>
+        <Date>28 October 2019</Date>
+        <Title>{title}</Title>
+        <Summary>{summary}</Summary>
       </PostTitle>
     </Piller>
   );
 }
 
-export { PillerComponent }
+export { PillerComponent };

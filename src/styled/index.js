@@ -4,3 +4,6 @@ export * from "./Piller";
 export * from "./PostTitle";
 export * from "./Summary";
 export * from "./Title";
+export * from './Nav'
+export * from './Logo'
+export * from './LogoText'
