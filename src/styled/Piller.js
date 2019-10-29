@@ -42,8 +42,13 @@ const Piller = styled.div`
   }
 
   &:hover {
-    transform: scale(1.1);
-  }
+    transform: scaleX(1.1);
+
+    & > div {
+        max-width: 250px;
+        transform: scale(1);
+      }
+    }
 
   ${Container}:hover {
     transform: translateX(-5%);
