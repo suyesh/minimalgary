@@ -6,6 +6,8 @@ const slideUpAnimation = keyframes`${slideInUp}`;
 
 const Piller = styled.div`
   height: 100vh;
+  margin: 0;
+  padding: 0;
   width: 100%;
   padding-right: 43px;
   padding-left: 25px;
