@@ -5,6 +5,7 @@ const Container = styled.div`
   justify-content: flex-start;
   align-items: center;
   overflow-y: scroll;
+  overflow-x: hidden;
   height: 100%;
 `;
 
